@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- social media icons -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+      <link rel="stylesheet" href="header.css">
+      <link rel="stylesheet" href="section.css">
+    <style>
+
+
+
+
+/* about section started */
+#about{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            min-height: 90vh;
+            background-color: black;
+            flex-direction: column;
+            flex-wrap: wrap;
+            /* border:1px solid red; */
+            padding:10px;
+        }
+       section h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 500;
+            text-align: center;
+           color: white;
+           width:100%;
+        }
+        .right{
+            display: flex;
+            padding: 20px;
+             width: 100%;
+            flex-direction: row;
+            align-items: center;
+           justify-content: space-between;
+        }
+        img{
+            width: 50%;
+            
+        }
+        .description {
+    line-height: 30px;
+    font-weight: 400;
+    color: aliceblue;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.about_left {
+
+    width: 50%;
+}
+span{
+    font-weight: 500;
+    
+    color: rgb(26, 209, 163);
+
+}
+
+
+
+@media (width < 750px) {
+
+.about_container {
+    flex-direction: column-reverse;
+    text-align: left;
+    padding: 25px 0;
+}
+
+.about_left {
+    width: 100%;
+    padding: 16px 0;
+    margin: auto;
+}
+
+
+.about_right {
+    width: 70%;
+    padding: 16px 0;
+
+    
+}
+
+.about_container .description{
+    width: 100%;
+    /* margin: auto; */
+}
+.about_right .title {
+    text-align: center;
+}
+.about_left img{
+    width: 70%;
+    margin-top: 0;
+}
+}
+
+
+
+/* Project */
+
+#projects{
+   min-height: 100vh;
+            background-color: black;
+}
+h3{
+  text-align: center;
+  font-size: 30px;
+  margin: 0%;
+  padding-top: 10px;
+  color: #171717;
+}
+a{
+  text-decoration: none;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  /* border:1px solid red; */
+  gap:10px;
+  background-color: black;
+}
+.container{
+  width: 300px;
+  /* margin: 15px; */
+  box-sizing: border-box;
+  /* float: left; */
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+  transition: .4s;
+  background-color: #f2f2f2;
+  /* border: 1px solid red; */
+  /* height: 500px; */
+}
+.container:hover{
+ box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+ transform: translate(0px, -8px);
+ z-index:1;
+ 
+}
+/* img{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+} */
+p{
+  text-align: center;
+  color: black;
+  padding-top: 0 8px;
+}
+h6{
+  font-size: 26px;
+  text-align: center;
+  color: #222f3e;
+  margin: 0;
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+li{
+  padding-top: 5px;
+}
+
+.fa-star{
+  font-size: 25px;
+  transition: 0.4s;
+  margin: 4px;
+
+}
+.checked{
+  color: goldenrod;
+}
+
+.mybtn{
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+ /* margin:  100px 0px; */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.buy-1{
+background-color: #E13BB9;
+}
+.buy-2{
+background-color:  green;
+}
+.buy-3{
+background-color: #213B68;
+}
+.buy-4{
+background-color: #428aca;
+}
+
+ 
+.contact_section{
+    min-height: 70vh;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.form-container {
+    width: 50%;
+    background: linear-gradient(rgb(42, 42, 42), rgb(42, 42, 42)) padding-box,
+                linear-gradient(45deg, transparent 35%,rgb(26, 209, 163), #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    /* border: 1px solid red; */
+    
+  }
+
+  
+  /* .form-container button:active {
+    scale: 0.95;
+  } */
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .form-container .form-group input {
+    width: 100%;
+    padding: 12px 5px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+    font-size: 15px;
+  }
+  
+  .form-container .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid #414141;
+    background-color: transparent;
+    font-family: inherit;
+    /* border: 1px solid red; */
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: rgb(26, 209, 163);
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: rgb(26, 209, 163);
+  }
+  .btn {
+  
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(10, 10, 10);
+  font-size: 16px;
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  /* /* margin-top: 20px; */
+  line-height: 24px;
+  width: 20%;
+}
+.btn:hover {
+  background-color: #da3316;
+  cursor: pointer;
+}
+.contact_section h1{
+  /* color: white; */
+  font: inherit;
+  font-size: 50px;
+}
+.form-group span{
+  color: red;
+}
+
+  
+ 
+  @media (width <= 580px){
+     .contact_section .form-container{
+        width: 80%;
+     }
+  }
+  
+
+  /* footer section */
+footer {
+  margin-top: auto;
+  background-color: #171717;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-media-icons a { 
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-media-icons a:hover {
+  color: aqua
+}     
+
+
+
+    </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-text">Marya <span>Mulla</span></div>
+  <nav>
+  <ul>
+    <li><a class="nav-links" href="#Home">Home</a></li>
+    <li><a class="nav-links" href="#About">About</a></li>
+    <li><a class="nav-links" href="#Projects">Projects</a></li>
+    <li><a class="nav-links" href="#Contact_Me">Contact Me</a></li>
+  </ul>
+</nav>
+</header>
+
+
+
+    <section>
+        <div  class="home" id="Home">
+           <div class="home-content">
+            <h1>Hello, Welcome</h1>
+               <h1>I'm Marya Shaikh</h1>
+               <h2>
+               Welcome to my Portfolio!&nbsp;  Myself &nbsp; Marya Shakil Shaikh. I have completed my Bachelors & diploma in Computer Science. I am skilled Front-end Developer.
+               </h2><br>
+            
+         <a href="skills">MY SKILLS...</a><br>
+             <a    href="SQL">SQL</a> &nbsp;
+             <a href="HTML">HTML</a> &nbsp;
+             <a href="CSS">CSS</a>&nbsp;
+             <a href="JAVASCRIPT">JAVASCRIPT</a>&nbsp;
+             <a href="Bootstrap">BOOTSTRAP</a>
+          </div>
+           
+          <div class="home-profile-picture">
+             <div class="profile-picture">
+                   <img src="./img/girl2.png" alt=" profile picture" />
+              </div>
+          </div>
+
+        </div>
+
+    </section>
+   
+
+
+      <!-- about section -->
+      <section id="About">
+        <h1>About <span>Me</span></h1>
+
+          <!-- <div class="left">
+            <img src="about.jpg" alt="profile img">
+           </div> -->
+
+           <!-- <img src="about.jpg" alt="profile img"> -->
+    
+           <div class="right">
+
+            <img src="./img/about.jpg" alt="profile img">
+
+               <p class="description">
+                   <span>» </span>Have persued my Btech engineering in
+                    <span>CSE</span> from Karmaveer bhaurao patil college of engineering.
+                    <br />
+                   <br />
+                    <span>» </span>I love to explore new technologies. I am a passionate learner and always
+                        ready to learn and work across technologies and domains 💡
+                      <br />
+                      <br />
+                    <span>» </span>I am currently working on my
+                   <span>Javascript</span> skills and exploring new technologies. I am
+                    also open to any <span>Web Development</span> opportunities.
+                    </p>
+           </div>
+            </section> 
+
+         
+            <!-- PROJECTS---- -->
+
+            <section id="Projects">
+              <h1>Projects</h1>
+              <div class="gallery">
+                  <div class="container">
+                     <img src="./img/ipcalc.jpeg" alt="shoes" width="150px" height="200px">
+                     <h3>Calculator</h3>
+                     <p>Using HTML CSS & JAVASCRIPT</p>
+                      <h6>5 Star Rating</h6>
+                     <ul>
+                     <li><i class="fa-solid fa-star checked"></i></li>
+                     <li><i class="fa-solid fa-star checked"></i></li>
+                     <li><i class="fa-solid fa-star checked"></i></li>
+                     <li><i class="fa-solid fa-star checked"></i></li>
+                     <li><i class="fa-solid fa-star checked"></i></li>
+                     </ul>
+                     <!-- <button class="buy-1">Click here</button> -->
+                     <a href="https://adoredgirl.github.io/calc-by-button/Index.html" class="buy-1 mybtn">Click here</a>
+                 </div>
+          
+          
+                 <div class="container">
+                  <img src="./img/loginpg.png" alt="fblogin" width="150px" height="200px">
+                  <h3>Facebook login page</h3>
+                  <p>Using HTML & CSS</p>
+                   <h6>5 star rating</h6>
+                  <ul>
+                    <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                  </ul>
+                  <!-- <button class="buy-2">Click here</button> -->
+                  <a href="https://adoredgirl.github.io/Facebook/" class="buy-2 mybtn">Click here</a>
+              </div>
+          
+          
+           <div class="container">
+                  <img src="./img/add-as-friend.webp" alt="fb add & remove btn"  width="150px" height="200px">
+                  <h3>Facebook Add Button</h3>
+                  <p>HTML CSS & JAVASCRIPT</p>
+                   <h6>5 star rating</h6>
+                  <ul>
+                    <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                  </ul>
+                  <!-- <button class="buy-3">Click Here</button> -->
+                  <a href="https://adoredgirl.github.io/add-friend/" target="_blank" class="buy-3 mybtn" >Click here</a>
+              </div>
+          
+              <div class="container">
+                  <img src="./img/instalike.webp" alt="instagram like btn"  width="150px" height="200px">
+                  <h3>Instagram like button</h3>
+                  <p>HTML CSS & JAVASCRIPT</p>
+                   <h6>5 star rating</h6>
+                  <ul>
+                    <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                   <li><i class="fa-solid fa-star checked"></i></li>
+                  </ul>
+                  <!-- <button class="buy-4">Click Here</button> -->
+                  <a href="https://adoredgirl.github.io/instagram-like-button/" class="buy-4 mybtn">Click here</a>
+              </div>
+              </div>
+          </section>
+
+       
+           <!-- contact -->
+           <section id="Contact_Me">
+            <div class="contact_section">
+              <h1 class="title">Contact <span>Me</span></h1>
+              <div class="form-container">
+                <form class="form" action="#" method="post" onsubmit="return validate()" novalidate>
+
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required >
+                    <span></span>
+                  </div>
+
+
+                   <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" >
+                    <span></span>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label for="tel">Mobile No-</label>
+                    <input type="tel" maxlength="10" minlength="10">
+                    <span></span>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label for="textarea">Your Message</label>
+                    <textarea name="textarea" id="textarea" rows="10" cols="50" ></textarea>
+                    <span></span>
+                   </div> 
+                
+
+                  <button class="btn contact-me" type="submit">Submit</button>
+
+                </form>
+              </div>
+            </div>
+
+          </section>
+
+
+          <footer>
+            <div class="footer-about-me">
+                
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a> -->
+                </div>
+            </div>
+        </footer>
+
+        <script>
+               
+          function validate(){
+     
+         let i = document.querySelectorAll("input");
+         console.log(i);
+         let s = document.querySelectorAll("#Contact_Me form span");
+         console.log(s);
+
+         let txtarea = document.querySelector("#Contact_Me textarea");
+         console.log(txtarea) 
+         let name = i[0].value;
+         let email = i[1].value;
+         let mob = i[2].value;
+         let msg = txtarea.value;
+          console.log(name,email,mob,msg)
+        // return false;
+
+        // console.log("ii")
+      
+     
+     
+    //      // validation for Full Name:-
+     
+     if(name === ""){
+         s[0].innerHTML = "Fields cannot by empty.";
+         return false;
+     }
+     else if(!isNaN(name)){
+         s[0].innerHTML = "Invalid inputs numbers are not allowed.";
+         return false;
+     }
+     else{
+         s[0].innerHTML = ""
+     }
+     
+     
+     if(email == ""){
+         s[1].innerHTML = "Warning ! email cannot be empty ....";
+         return false;
+     }
+     else if(email.indexOf('@') <=1 || email.indexOf('.') <=1){
+         s[1].innerHTML = "Warning! invalid email..";
+         return false;
+     }
+     else if(email.charAt(email.length - 4) != '.' && email.charAt(email.length - 3) != '.' || email.search(/[@.]{2,}/) != -1  ){
+         s[1].innerHTML = "Warning! invalid email....";
+         return false;
+     }
+     else{
+         s[1].innerHTML = "";
+     }
+     
+     
+     
+     
+    //  // for mobile no validation
+     
+     
+     if(mob == ""){
+         s[2].innerHTML = "Mobile number is mandatory."
+         return false;
+     }
+     else if (isNaN(mob) || mob.length < 10){
+         s[2].innerHTML = "Invalid inputs";
+         return false;
+     }
+     else{
+         s[2].innerHTML = "";
+     }
+     
+
+    // for textArea validation
+
+    if(msg == ""){
+         s[3].innerHTML = "Fields cannot by empty.";
+       return false;
+     }
+    }
+      </script>  
+
+    
+
+</body>
+</html>
